@@ -3,12 +3,14 @@
   "esy": { "buildsInSource": "_build", "build": "dune build @all" },
   "scripts": {
     "watch": "esy b dune build @runtest -w",
+     "watch-js": "esy b dune build @run_hello_js -w",
     "start": "esy b dune exec ./test.exe"
   },
   "dependencies": {
     "@opam/alcotest": "1.4.0",
     "@opam/dune": "*",
-    "ocaml": "4.12.x"
+    "ocaml": "4.12.x",
+    "melange": "melange-re/melange"
   },
   "devDependencies": { "@opam/ocaml-lsp-server": "*" }
 }

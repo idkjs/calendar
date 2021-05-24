@@ -1,0 +1,15 @@
+{
+  "name": "calendar",
+  "sources": [
+    {
+      "dir": "src"
+    },
+    { "dir": "tests", "dev": true }
+  ],
+  "suffix": ".bs.js",
+  "package-specs": [ { "module": "commonjs", "in-source": true } ],
+  "warnings": {
+    "number": "+A-42-48-44-4-32",
+    "error": "+A-3-102-103"
+  }
+}

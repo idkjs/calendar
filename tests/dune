@@ -8,3 +8,9 @@
  (deps test.exe)
  (action
   (run ./test.exe -e)))
+
+; (rule
+;  (alias runtest)
+;  (deps test.bs.js)
+;  (action
+;   (run node ./tests.bs.js)))

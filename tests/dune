@@ -1,9 +1,10 @@
-
 (executable
-  (name test)
-  (libraries calendar alcotest))
+ (modes byte exe)
+ (name test)
+ (libraries calendar alcotest))
 
-(alias
-  (name runtest)
-  (deps  test.exe)
-  (action (run ./test.exe -e)))
+(rule
+ (alias runtest)
+ (deps test.exe)
+ (action
+  (run ./test.exe -e)))

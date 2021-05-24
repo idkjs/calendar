@@ -27,10 +27,6 @@ type t =
 
 let tz = ref UTC
 
-let out_of_bounds x = x < - 12 || x > 11
-
-let in_bounds x = not (out_of_bounds x)
-
 let make_in_bounds x =
   let y = x mod 24 in
   if y < -12 then y + 24

@@ -1,0 +1,14 @@
+{
+  "name": "calendar",
+  "esy": { "buildsInSource": "_build", "build": "dune build @all" },
+  "scripts": {
+    "watch": "esy b dune build @runtest -w",
+    "start": "esy b dune exec ./test.exe"
+  },
+  "dependencies": {
+    "@opam/alcotest": "1.4.0",
+    "@opam/dune": "*",
+    "ocaml": "4.12.x"
+  },
+  "devDependencies": { "@opam/ocaml-lsp-server": "*" }
+}
